@@ -1,0 +1,250 @@
+@charset "UTF-8";
+@import url(../css/chat-Index.css);
+@import url(../css/common.css);
+@import url(../css/header.css);
+
+
+
+
+.nickname-area,
+.question-area,
+.chat-menu-bar{
+    padding: 0px 16px;
+}
+.none-message,
+.chat-preview, 
+.chat-time{
+    color: gray;
+    font-size: small;
+}
+.chat-list-area nav > div,
+.message-time{
+    display: flex;
+    min-height: 44px;
+    align-items: center;
+}
+.nickname-area,
+.profile,
+.chat-menu{
+    display: flex;
+    align-items: center;
+    height: 64px;
+    padding: 10px 0px;
+}
+.profile{
+    margin-bottom: 10px;
+}
+
+.profile-img img{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
+    background-color: white;
+}
+
+.recive-msg-box{
+    display: flex;
+    margin: 0px;
+    margin-bottom: 30px;
+    width: 60%;
+}
+.send-msg-box{
+    display: flex;
+    justify-content: flex-end;
+    margin: 0px;
+    margin-bottom: 30px;
+    float: right; 
+    width: 60%;    
+}
+.chat-room{
+    background-color: whitesmoke;
+}
+
+
+.none-message{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.none-message label{
+    margin:0px;
+}
+
+.chat-list a{
+    width: 100%;
+    display:flex;
+    padding: 16px;
+}
+.chat-list a:hover {
+    background-color: rgba(245, 245, 245, 0.7);
+    transition: background-color 1s;
+}
+.selected{
+    background-color: whitesmoke;
+}
+
+.chat-list-area{
+    padding-right:30px;
+}
+
+.message-time{
+    margin-bottom: 60px;
+}
+
+.chat-area{
+    min-width: 812px;
+}
+.message-area{
+    margin:0px 10px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 640px; 
+}
+
+
+.message-time{
+    font-size: 12px;
+    justify-content: center;
+}
+.question-area{
+    display: flex;
+    height: 80px;
+    padding: 16px;
+    border-top: 1px solid gainsboro;
+    background-color: white;
+}
+.question-area button{
+    padding: 0px;
+    width: 20%;
+    height: 100%;
+    border: 0px;
+    border-radius: 2px;
+    background-color: olivedrab;
+    color: white;
+    font-weight: bold;
+    transition: all 0.5s;
+}
+.question-area button:hover{
+    opacity: 70%;
+    transition: all 0.5s;
+}
+.question-area button:disabled{
+    background-color: whitesmoke;
+    color: gray;
+}
+
+
+.question-area textarea{
+    border: 0px;
+    display: inline;
+    width: 78%;
+    resize: none;
+}
+.question-area textarea:focus{
+    outline-color: yellowgreen;
+    outline-width: 1px;
+    transition: outline 0.3s;
+}
+
+.chat-area{
+    height: 810px;
+}
+
+.chat-menu-bar{
+    background-color: whitesmoke;
+}
+.chat-menu{
+    margin: 30px 0px;
+    width: 50px;
+    height: 30px;
+    justify-content: center;
+}
+.chat-menu:hover{
+    background-color: white;
+    border-radius: 50%;
+    transition: background-color 0.7s;
+}.chat-menu:hover i{
+    color: olivedrab;
+    transition: color 0.5s;
+}
+
+.recive-msg{
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.05);
+    padding: 16px;
+    border-radius: 15px;
+    max-width: 300px;
+    font-weight: 500;
+}
+
+.send-msg{
+    display: flex;
+    background-color: rgba(107, 142, 35, 0.5);
+    padding: 16px;
+    border-radius: 15px;
+    max-width: 300px;
+    font-weight: 500;
+}
+
+.send-msg-box span{
+    margin-left: 5px;
+}
+
+.msg-time{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    font-size: small;
+    margin:0px 8px;
+    color:rgba(0, 0, 0, 0.6);
+}
+
+.send-msg span,
+.recive-msg span{
+    font-size: 16px;
+}
+
+.not-read{
+    margin-left: 5px;
+    color: red;
+}
+
+#more-btn{
+    border: 0px;
+    background-color: whitesmoke;
+}
+
+#more-btn:hover{
+    cursor: pointer;
+}
+#more-dropdown{
+    position:absolute;
+    padding: 10px 0px;
+    background-color: white;
+    border: 1px solid;
+    top:20%;
+    right: 70px
+}
+.dropdown-item{
+    padding: 10px;
+    font-size: small;
+}
+
+.dropdown-item:hover{
+    background-color: rgba(0,0,0,0.1);
+    cursor: pointer;
+}
+
+#subMenuItem1 {
+    position:absolute;
+    padding: 10px 0px;
+    background-color: white;
+    border: 1px solid;
+    top:6%;
+    left:19%;
+}
+#subMenuItem1 div{
+    padding: 10px 25px;
+    align-items: center;
+    text-align: center;
+}

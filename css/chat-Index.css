@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+.body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 880px;
+}
+
+.main{
+    display: flex;
+    padding: 0px 30px;
+    margin-top: 40px;
+    height: 100%;
+}
+
+ul{
+    padding:0px;
+}
+
+li{
+    list-style: none;
+}
+
+a{ 
+    text-decoration: none;
+    color: black;
+}
+
+.footer #companyInfo {
+	width: 1280px;
+	vertical-align: middle;
+	text-align: center;
+	position: relative;
+	padding-left: 30px;
+	padding-right: 30px;
+	margin: 0 auto;
+}
+.footer #companyInfo img{
+	text-align: center;
+	width: 1280px;
+	height: 455px;
+	
+}

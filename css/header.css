@@ -1,0 +1,86 @@
+@charset "UTF-8";
+
+
+/*기본 설정 : 리스트 스타일 풀고 a태그 데코레이션 없앰*/
+ul{
+    padding:0px;
+}
+
+li{
+    list-style: none;
+}
+
+a{ 
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    cursor: pointer;
+}
+
+
+.nev-menu,
+.header-menu{
+    display: flex;
+    align-items: center;
+    margin:20px 80px;
+    padding-top: 20px;
+}
+
+.logo img{
+    width: 180px;
+}
+.header-item li,
+.logo{
+    display: inline;
+    padding: 10px 20px;
+    color:gray;
+    font-size: small;
+}
+
+.header-item i{
+    margin-right: 10px
+}
+.header-item li:hover{
+    color: olivedrab;
+    font-weight: bold;
+    transition: color 1s, weight 1s;
+}
+
+/*지금 들어와있는 페이지를 알려주기 위해 볼드처리*/
+.focus li{
+    color: #000;
+    font-weight: bold;
+}
+
+/*제철 과일 선택하면 선택됐다는 표시로 볼드처리*/
+.select-dropdown{
+    font-weight: bold;
+}
+
+.input-search-word{
+    float: left;
+    height: 30px;
+    width: 400px;
+    border:3px solid olivedrab;
+    padding:3px 10px;
+}
+.input-search-word:focus{
+    outline: 0px;
+}
+.search-button{
+    display: flex;
+    height: 42px;
+    width: 42px;
+    background-color: olivedrab;
+    color: white;
+    border:0px;
+    align-items: center;
+}
+
+
+/*드롭다운 메뉴 숨기는 css*/
+.hidden{
+    display: none;
+}
