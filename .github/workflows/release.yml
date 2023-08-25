@@ -22,4 +22,4 @@ jobs:
           version: $
           publish: true
         env:
-          GITHUB_TOKEN: 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
+          GITHUB_TOKEN: ${{ secrets.SECRET_KEY }}
